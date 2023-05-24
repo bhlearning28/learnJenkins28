@@ -1,0 +1,58 @@
+File Name: WelcomeBhavesh.java
+
+public class WelcomeBhavesh {
+    public static void main(String[] args) {
+        String name = "Bhavesh";
+        System.out.println("Hello, Welcome " + name + "!");
+    }
+}
+
+#Run below commands on cmd/git bash:
+
+Go to file location where your .java file is present (here, WelcomeBhavesh.java)
+
+then,
+
+javac <file name> 
+
+here, javac WelcomeBhavesh.java --> It will create .class file on same location
+
+Now go to Jenkins Job and add below commands in Execute Windows bash command:
+
+cd <file location>
+javac <file name>
+java WelcomeBhavesh 
+
+
+##Trigger Build Remotely:
+
+Toke_Name : bhavesh2809
+
+Use the following URL to trigger build remotely: JENKINS_URL/job/HelloWorld/build?token=TOKEN_NAME or /buildWithParameters?token=TOKEN_NAME
+
+localhost:8080/job/HelloWorld/build?token=bhavesh2809 --> Using this URL we can run our Jenkins job remotely
+
+or 
+
+/buildWithParameters?token=bhavesh2809
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
